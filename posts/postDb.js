@@ -18,9 +18,9 @@ function getById(id) {
     .first();
 }
 
-function insert(post) {
+function insert(user_id, text) {
   return db('posts')
-    .insert(post)
+    .insert({user_id, text})
     .then(ids => {
       return getById(ids[0]);
     });
