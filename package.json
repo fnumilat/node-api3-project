@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/LambdaSchool/node-api3-project#readme",
   "dependencies": {
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "knex": "^0.20.11",
     "sqlite3": "^4.1.1"
