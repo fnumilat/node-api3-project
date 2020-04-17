@@ -20,7 +20,7 @@ function logger(req, res, next) {
   next()
 }
 
-server.listen(9066, () => {
+server.listen(process.env.PORT || 9066, () => {
   console.log("server started at port 9066")
 })
 
